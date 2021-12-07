@@ -1,6 +1,5 @@
 package com.techreturners.exercise001;
 
-import java.util.Collections;
 import java.util.List;
 
 public class Exercise001 {
@@ -9,14 +8,12 @@ public class Exercise001 {
     }
 
     public String generateInitials(String firstName, String lastName) {
-        int fullName = firstName.charAt(0) + lastName.charAt(0);
-        return "fullName";
+        return firstName.charAt(0)+ "." + lastName.charAt(0);
     }
 
     public double addVat(double originalPrice, double vatRate) {
         double addingVat = originalPrice + (originalPrice * vatRate) / 100;
-        addingVat = Math.round((addingVat * 100)/100);
-        return addingVat;
+        return Math.round((addingVat * 100)/100);
     }
 
     public String reverse(String sentence) {
